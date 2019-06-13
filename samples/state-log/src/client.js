@@ -57,7 +57,7 @@ function negotiate () {
   }).then(function () {
     var offer = pc.localDescription
 
-    return fetch('http://0.0.0.0:3000/offer', {
+    return fetch('https://liveness.nxcd.app/offer', {
       body: JSON.stringify({
         sdp: offer.sdp,
         type: offer.type,
